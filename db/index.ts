@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-export type Product = {
+export type ProductType = {
   id: string;
   imageId: string;
   name: string;
@@ -13,4 +13,4 @@ export type Product = {
   price: number;
 };
 
-export const db = new Index<Product>();
+export const db = new Index<ProductType>();

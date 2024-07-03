@@ -4,7 +4,7 @@ import ProductSkeleton from "@/components/Products/ProductSkeleton";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Slider } from "@/components/ui/slider";
-import type { Product as TProduct } from "@/db";
+import type { ProductType as TProduct } from "@/db";
 import { cn } from "@/lib/utils";
 import { ProductState } from "@/lib/validators/product-validator";
 import { useQuery } from "@tanstack/react-query";
