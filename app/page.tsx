@@ -84,7 +84,7 @@ export default function Home() {
   const { data: products, refetch } = useQuery({
     queryKey: ["products"],
     queryFn: async () => {
-      const { data } = await axios.post<QueryResult<TProduct>[]>('http://localhost:3000/api/products', {
+      const { data } = await axios.post<QueryResult<TProduct>[]>('https://ecommerce-filtering-solution-b2cahl3gn-anuragmishra22s-projects.vercel.app/api/products', {
         filter: {
           sort: filter.sort,
           color: filter.color,
