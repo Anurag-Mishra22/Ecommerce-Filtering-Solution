@@ -12,8 +12,9 @@ import { QueryResult } from "@upstash/vector";
 import axios from "axios";
 import { ChevronDown, Filter } from "lucide-react";
 import { useCallback, useState } from "react";
-import debounce from "lodash/debounce";
+
 import EmptyState from "@/components/Products/EmptyState";
+import debounce from "lodash.debounce";
 
 const SORT_OPTIONS = [
   { name: "None", value: "none" },
